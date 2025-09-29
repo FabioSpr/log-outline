@@ -1,0 +1,37 @@
+{
+  "name": "log-outline",
+  "displayName": "Log Outline",
+  "description": "Provides Outline sections for log files.",
+  "version": "0.0.1",
+  "publisher": "fabio-spreafico",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "log",
+        "aliases": ["Log", "log"],
+        "extensions": [".log"],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "@types/vscode": "^1.60.0",
+    "@types/node": "^14.17.0",
+    "vscode-test": "^1.5.2"
+  }
+}
