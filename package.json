@@ -1,15 +1,19 @@
 {
   "name": "log-outline",
-  "displayName": "Log Outline",
+  "displayName": "Log Outline for VS Code",
   "description": "Provides Outline sections for log files.",
   "version": "0.0.1",
-  "publisher": "fabio-spreafico",
+  "publisher": "TXT-E-Tech",
   "engines": {
     "vscode": "^1.80.0"
   },
   "categories": [
     "Other"
   ],
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/FabioSpr/log-outline.git"
+  },
   "main": "./out/extension.js",
   "contributes": {
     "languages": [
@@ -22,11 +26,9 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile",
-    "test": "node ./out/test/runTest.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "publish": "vsce package && vsce publish"
   },
   "devDependencies": {
     "typescript": "^4.5.4",
