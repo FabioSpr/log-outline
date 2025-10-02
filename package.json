@@ -2,7 +2,7 @@
   "name": "log-outline",
   "displayName": "Log Outline for VS Code",
   "description": "Provides Outline sections for log files.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "TXT-E-Tech",
   "engines": {
     "vscode": "^1.80.0"
